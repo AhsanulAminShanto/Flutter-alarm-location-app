@@ -1,16 +1,31 @@
 # new_try
 
-A new Flutter project.
+# Flutter Alarm Location App
 
-## Getting Started
+A Flutter-based mobile app for a job interview task assessment. It features onboarding screens, location access, and alarm settings with notifications.
 
-This project is a starting point for a Flutter application.
+## Features
+- 3 onboarding screens with a "Skip" option.
+- Location permission and display.
+- Alarm setting with time picker and notification.
+- Local storage of alarms.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Flutter-alarm-location-app/
+├── android/              # Android configuration
+├── ios/                  # iOS configuration
+├── lib/
+│   ├── features/
+│   │   ├── onboarding/   # Onboarding screens
+│   │   │   ├── onboarding_screen.dart
+│   │   ├── location/     # Location handling
+│   │   │   ├── location_screen.dart
+│   │   │   └── location_service.dart
+│   │   ├── alarm/        # Alarm functionality
+│   │   │   ├── alarm_screen.dart
+│   └── main.dart         # App entry point
+├── assets/               # Static assets (e.g., images from Figma)
+├── test/                 # Unit and widget tests
+├── .gitignore
+├── pubspec.yaml          # Dependencies and configuration
+├── README.md             # This file
+└── analysis_options.yaml # Static analysis options
